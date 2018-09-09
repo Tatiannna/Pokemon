@@ -1,0 +1,34 @@
+body{
+	background-color: rgb(255, 255, 204);
+	text-align: center;
+}
+
+img {
+	width: 200px;
+	z-index: 1;
+	margin-top: 15%;
+}
+
+input {
+	border-radius: 10px;
+	width: 400px;
+	height: 35px;
+}
+
+button {
+	border-radius: 10px;
+	height: 35px;
+	width: 100px;
+	margin: 0, 20px;
+}
+
+div {
+	margin-top: 10px;
+}
+
+
+
+
+
+
+

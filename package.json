@@ -1,0 +1,17 @@
+{
+  "name": "pokemun",
+  "version": "1.0.0",
+  "description": "pokedex",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Tatianna Robinson",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "pokedex-promise-v2": "^3.1.1"
+  }
+}
