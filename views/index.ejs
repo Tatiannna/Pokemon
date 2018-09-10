@@ -4,17 +4,16 @@
 	<title>Pokemun</title>
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<script type="text/javascript" src="query.js"></script>
 </head>
 <body>
 	<img src="images/lugia.png">
-	<form id="search">
-		<input type="text" id="query" name="search" placeholder="Bulbasaur">
+	<form id="searchForm" action="/pokemon/">
+		<input type="text" id="query"  name="search" placeholder="Bulbasaur">	
 		<div>
-			<button type="submit">Search</button>
+			<button type="submit" id="searchButton">Search</button>
 			<button> Metronome</button>
-		</div>
 		
+		</div>
 	</form>
 	<form></form>
 </body>
