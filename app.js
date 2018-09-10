@@ -1,8 +1,8 @@
 let express = require("express");
-let Pokedex = require("pokedex-promise-v2");
-let P = new Pokedex();
 let bodyParser = require("body-parser");
 let app = express();
+let Pokedex = require('pokedex-promise-v2'); 
+let P = new Pokedex();
 
 const PORT = process.env.PORT || 5000;
 
@@ -16,10 +16,13 @@ app.get('/', function(req, res){
 
 // POKEMON
 app.get('/pokemon/', function(req, res){
-	var pokemon = req.query.search;
-	console.log(pokemon);
-	res.render("pokemon.ejs", {name: pokemon});
+	P.getPokemonByName(req.query.search, function(response, error) { 
+      if(!error) {
+        res.render("pokemon.ejs", {pokemon: response}); 
+      } else {
+        console.log(error)
+      }
+    });
 });
-
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
