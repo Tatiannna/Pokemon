@@ -20,7 +20,7 @@ app.get('/pokemon/', function(req, res){
       if(!error) {
         res.render("pokemon.ejs", {pokemon: response}); 
       } else {
-        console.log(error)
+        res.render("pokemon.ejs", {pokemon: "Not Found"});
       }
     });
 });
