@@ -16,7 +16,7 @@ app.get('/', function(req, res){
 
 // POKEMON
 app.get('/pokemon/', function(req, res){
-	P.getPokemonByName(req.query.search, function(response, error) { 
+	P.getPokemonByName(req.query.search.toLowerCase(), function(response, error) { 
       if(!error) {
         res.render("pokemon.ejs", {pokemon: response}); 
       } else {
