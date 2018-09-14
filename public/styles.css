@@ -26,7 +26,13 @@ div {
 	margin-top: 10px;
 }
 
-
+#trademark {
+  font-size: 10px;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px; 
+}
 
 
 
