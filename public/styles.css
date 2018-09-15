@@ -20,6 +20,7 @@ button {
 	height: 35px;
 	width: 95px;
 	margin: 0, 20px;
+	padding: 0;
 }
 
 div {
@@ -34,7 +35,8 @@ div {
   height:60px; 
 }
 
-
-
+#trademark p{
+	margin-bottom: 0;
+}
 
 
