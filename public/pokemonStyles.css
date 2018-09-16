@@ -35,5 +35,12 @@ h1 {
 	margin-top: 20px;
 }
 
+.fa-chevron-left {
+	float: left;
+}
+
+.fa-chevron-right {
+	float: right;
+}
 
 
