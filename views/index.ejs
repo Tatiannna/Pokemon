@@ -9,10 +9,10 @@
 <body>
 	<img src="images/Lugia.png">
 	<form id="searchForm" action="/pokemon/">
-		<input type="text" id="query"  name="search" placeholder="Bulbasaur">	
+		<input type="text" idcss ="query"  name="search" placeholder="Bulbasaur">	
 		<div>
 			<button type="submit" id="searchButton"><span id="search-button">Search</span></button>
-			<button><span id="metronome">Metronome</span></button>
+			<a href=<%="/pokemon/?search=" + Math.floor(Math.random() * 803)%>><button>Metronome</a></button>
 		</div>
 		<div id="trademark">
 			<p>© 1995–2018 Nintendo/Creatures Inc./GAME FREAK inc. 
